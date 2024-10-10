@@ -25,7 +25,7 @@ console.log(songs)
 let songUL=document.querySelector(".songlist").getElementsByTagName("ul")
 for(const song of songs)
 {
-    songUL.innerHTML=songUL.innerHTML+'<li> ${song.replaceAll1111111111111111111111111111111111111`("%20%"," ")}</li>';
+    songUL.innerHTML=songUL.innerHTML+'<li> ${song.replaceAll`("%20%"," ")}</li>';
 }
 var audio = new Audio(songs[0]);
 audio.play();
