@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="90" class="invert" src="img/logo.svg" alt=""></div>
+                <ul>
+                    <li><img width = "20" class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img width = "20" class="invert" src="img/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        <li onclick="playSong('song1')"> 
+                          Fear Song
+                          <img class="invert" src="img/play.svg" alt="Play" width="20" height="20" >
+                        </li>
+                        <li onclick="playSong('song2')">Kadalalle
+                          <img class="invert" src="img/play.svg" alt="Play" width="20" height="20" >
+                        </li>
+                        <li onclick="playSong('song3')"> Ninne Tholi Prema
+                          <img class="invert" src="img/play.svg" alt="Play" width="20" height="20" >
+                        </li>
+                        <li onclick="playSong('song4')"> Sada Siva
+                          <img class="invert" src="img/play.svg" alt="Play" width="20" height="20" >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer"> 
+                    <div class="card border ">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                                <circle cx="12" cy="12" r="10" stroke="black" stroke-width="1.5" fill="none" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/Angry_(mood)/cover.jpg" alt="Angry">
+                        <h3>Angry Mood</h3>
+                        <p>Calm your Anger</p>
+                    </div>
+                    <div class="card border">
+                        <img src="songs/Bright_(mood)/cover.jpg" alt="">
+                        <h3>Bright Mood</h3>
+                        <p>Bright Songs for you</p>
+                    </div>
+                    <div class="card border">
+                        <img src="songs/Chill_(mood)/cover.jpg" alt="">
+                        <h3>Chill Mood</h3>
+                        <p>Yes, Just Chill</p>
+                    </div>
+                    <div class="card border">
+                        <img src="songs/Dark_(mood)/cover.jpg" alt="">
+                        <h3>Dark Mood</h3>
+                        <p>Dark Songs for you</p>
+                    </div>
+                    <div class="card border ">
+                        <img src="songs/Diljit/cover.jpg" alt="">
+                        <h3>Diljit Dosanjh</h3>
+                        <p>Diljit Dosanjh hits</p>
+                    </div>
+                    <div class="card border">
+                        <img src="songs/Funky_(mood)/cover.jpg" alt="">
+                        <h3>Go Funky</h3>
+                        <p>Lets go Funky</p>
+                    </div>
+                    <div class="card border ">
+                        <img src="songs/karan aujla/cover.jpg" alt="">
+                        <h3>Karan Aujla</h3>
+                        <p>Karan Aujla for you</p>
+                    </div>
+                    <div class="card border">
+                        <img src="songs/Love_(mood)/cover.jpg" alt="">
+                        <h3>I Love You</h3>
+                        <p>Love is in the air</p>
+                    </div>
+                    
+                    <div class="card border">
+                        <img src="songs/ncs/cover.jpg" alt="">
+                        <h3>Sleep Songs</h3>
+                        <p>Songs for you</p>
+                    </div>
+                    <div class="card border ">
+                        <img src="songs/Uplifting_(mood)/cover.jpg" alt="">
+                        <h3>Get up</h3>
+                        <p>You can do it!</p>
+                    </div>
+                </div>
+                <div class="playButtonContainer">
+                    <img class="play" src="img/play.svg" alt="Play" width="40">
+                </div>
+            </div>
+        </div>
+    </div>
+         <div class="playbar">
+                    <div  class="seekbar">
+                        <div  class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+
+
+                        <div class="songinfo">
+                           <p id="song-name">Song Name</p>
+
+                        </div>
+                        
+        </div>
+
+        <div class="time-info">
+            <p id="current-time">0:00</p>
+            <p id="total-time">3:45</p>
+        </div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+
+                       
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add audio elements for each song -->
+    <audio id="song1" src="songs/Fear Song.mp3"></audio>
+    <audio id="song2" src="songs/Kadalalle.mp3"></audio>
+    <audio id="song3" src="songs/Ninne Tholi Prema.mp3"></audio>
+    <audio id="song4" src="songs/Sada Siva.mp3"></audio>
+
+    <script src="js/script.js">
+       
+    </script>
+</body>
+
+</html>
